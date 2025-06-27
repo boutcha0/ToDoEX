@@ -121,27 +121,6 @@ JWT_REFRESH_TTL=20160
 bash# Exécuter les migrations
 php artisan migrate
 
-# (Optionnel) Exécuter les seeders
-php artisan db:seed
-7. Configuration Frontend (Vue.js)
-bash# Installer les dépendances Node.js
-npm install
-
-# Copier la configuration d'environnement frontend
-cp .env.example .env.local
-Modifier .env.local :
-envVITE_API_URL=http://localhost:8000/api
-VITE_PUSHER_APP_KEY=votre_app_key
-VITE_PUSHER_APP_CLUSTER=votre_cluster
-8. Démarrage des Serveurs
-Serveur Laravel (Terminal 1)
-bashphp artisan serve
-# Application disponible sur http://localhost:8000
-Serveur de Développement Vue.js (Terminal 2)
-bashnpm run dev
-# Application disponible sur http://localhost:5173
-Queue Worker pour les WebSockets (Terminal 3)
-bashphp artisan queue:work
 🔌 API Endpoints
 Authentification
 MéthodeEndpointDescriptionPOST/api/auth/registerInscription d'un nouvel utilisateurPOST/api/auth/loginConnexion utilisateurGET/api/auth/meProfil utilisateur connectéPOST/api/auth/logoutDéconnexionPOST/api/auth/refreshRafraîchir le token JWT
