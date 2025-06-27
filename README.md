@@ -83,7 +83,7 @@ PostgreSQL ou MySQL
 Compte Pusher (pour WebSockets)
 
 1. Cloner le Repository
-bashgit clone https://github.com/votre-username/todo-app-laravel-vue.git
+bashgit clone https://github.com/boutcha0/ToDoEX.git
 cd todo-app-laravel-vue
 2. Configuration Backend (Laravel)
 bash# Installer les dépendances PHP
